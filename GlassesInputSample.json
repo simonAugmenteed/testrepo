@@ -1,0 +1,365 @@
+{
+  "messageType":"getStacks",
+  "project": {
+    "id": "507f1f77bcf86cd799439011",
+    "name": "CDF L03 LMR100",
+    "jobStacks": [
+      {
+        "id": "3ce6058cd3bd24410bda796b",
+        "name": "Stack 1",
+        "jobs": [
+          {
+            "id": "aef343a9e8f9487c6864417a",
+            "name": "ScanQRcode",
+            "details": {
+              "type": "ScanQRcode"
+            },
+            "steps": [
+              {
+                "id": "7f5da71ec098390d60afc0d3",
+                "type": "ScanQRcode",
+                "toptitleProgressBarBar": {},
+                "title": "",
+                "subtitle": "",
+                "text": "Scan the QR code",
+                "medias": [],
+                "titleProgressBar": {},
+                "buttons": []
+              }
+            ]
+          },
+          {
+            "id": "5a6900fff467be65019a9001",
+            "name": "Prepare tools for filler machine",
+            "details": {
+              "type": "tool"
+            },
+            "steps": [
+              {
+                "id": "769735024ec07ffc234710a8",
+                "type": "instructionText",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 0,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 1",
+                "subtitle": "Prepare tool",
+                "text": "Wrench 26",
+                "medias": [],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 70,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "1ce0e4269070088b3b6138be"
+                  },
+                  {},
+                  {}
+                ]
+              },
+              {
+                "id": "1ce0e4269070088b3b6138be",
+                "type": "instructionText",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 50,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 2",
+                "subtitle": "Prepare tool",
+                "text": "O-ring for spout 23",
+                "medias": [],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 50,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "7f5da71ec098390d60afc0d3"
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "769735024ec07ffc234710a8"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5a6900fff467be65019a9001",
+            "name": "Filler machine",
+            "details": {
+              "type": "machine"
+            },
+            "steps": [
+              {
+                "id": "7f5da71ec098390d60afc0d3",
+                "type": "location",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 0,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 1",
+                "subtitle": "Filler machine",
+                "text": "Go to location L1",
+                "medias": [
+                  "7f5da71ecbdh390d60afc0d3.jpg"
+                ],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 30,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "f823fc2fc4582d0add571f3f"
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "1ce0e4269070088b3b6138be"
+                  }
+                ]
+              },
+              {
+                "id": "f823fc2fc4582d0add571f3f",
+                "type": "location",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 40,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 2",
+                "subtitle": "Filler machine",
+                "text": "Place yourself on marker: A3",
+                "medias": [
+                  "f823fc2fc4582d0add571f3f.jpg"
+                ],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 20,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "0f0a347aac9367b68680faaf"
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "7f5da71ec098390d60afc0d3"
+                  }
+                ]
+              },
+              {
+                "id": "0f0a347aac9367b68680faaf",
+                "type": "instructionTextMediaValue",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 60,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 3",
+                "subtitle": "Change spout 1/3",
+                "text": "Remove spout with: 26mm wrench",
+                "medias": [
+                  "0f0a347aac9367b68680faaf.jpg"
+                ],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 20,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "6b8eca0dbe3a36f9b3c26f22"
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "f823fc2fc4582d0add571f3f"
+                  }
+                ]
+              },
+              {
+                "id": "6b8eca0dbe3a36f9b3c26f22",
+                "type": "instructionTextMediaValue",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 80,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 4",
+                "subtitle": "Change spout 2/3",
+                "text": "Place o-ring on spout 23",
+                "medias": [
+                  "6b8eca0dbe3a36f9b3c26f22.jpg"
+                ],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 20,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "goTo",
+                    "value": "6d707d9803260c16f723421b"
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "0f0a347aac9367b68680faaf"
+                  }
+                ]
+              },
+              {
+                "id": "6d707d9803260c16f723421b",
+                "type": "instructionTextMediaValue",
+                "toptitleProgressBarBar": {
+                  "type": "percentage",
+                  "parameters": {
+                    "value": 80,
+                    "color": "FCC92EFF",
+                    "animation": ""
+                  }
+                },
+                "title": "Step 5",
+                "subtitle": "Change spout 3/3",
+                "text": "Tighten the spout with: 26mm wrench",
+                "medias": [],
+                "titleProgressBar": {
+                  "type": "time",
+                  "parameters": [
+                    {
+                      "value": 0,
+                      "color": "50A448FF",
+                      "animation": ""
+                    },
+                    {
+                      "value": 20,
+                      "color": "E7362AFF",
+                      "animation": ""
+                    }
+                  ]
+                },
+                "buttons": [
+                  {
+                    "title": "Confirm",
+                    "action": "finishJobStack",
+                    "value": ""
+                  },
+                  {},
+                  {
+                    "title": "Return",
+                    "action": "goTo",
+                    "value": "6b8eca0dbe3a36f9b3c26f22"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
